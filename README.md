@@ -4,7 +4,7 @@
 
 RLM-Studio is a web-native, deterministic engineering workspace and verification harness optimized for macroscopic codebase creation, refactoring, and automated structural repairs. Moving away from standard conversational chat frameworks, RLM-Studio handles software codebases as unified execution trees rather than fragmented text sequences. While the layout provides a dedicated sidebar for localized chat interaction and sequential diagnostics, the core workspace operates as an autonomous engineering console. The operator defines high-level programmatic goals or points to targeted code defects, and the system executes file mutations directly across a hermetic filesystem instantiated entirely within the browser client.
 
-The platform coordinates structural context management methodologies established during the development of the [Scribe-LLM Core Engine](https://github.com/oldskool978/Scribe-LLM) to maximize token utility and guide localized inference passes across multi-file architectures.
+The platform coordinates structural context management methodologies established during the development of [Scribe-LLM Intelligence Augmentation Engine](https://github.com/oldskool978/Scribe-LLM) to maximize token utility and guide localized inference passes across multi-file architectures.
 
 ---
 
@@ -43,7 +43,7 @@ RLM-Studio operates on formal data-transformation loops designed to track code d
 
 ## 📅 Implementation Roadmap
 
-Following the production deployment of Scribe-LLM v1.0.0's backend core and hardware acceleration modules, integration focus is centered on optimizing the Web-IDE visualization layout and local VFS serialization.
+Following the production deployment of Scribe-LLM's backend core and hardware acceleration modules, integration focus is centered on optimizing the Web-IDE visualization layout and local VFS serialization.
 
 **Status: [███████████████████▒] 96%**
 
