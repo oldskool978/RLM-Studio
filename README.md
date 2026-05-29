@@ -1,49 +1,64 @@
-# RLM-Studio: A Recursive Reasoning WEB-IDE
+# RLM-Studio: A Context-Managed Codebase Generation & Refactoring Harness
 
-### *Scaling Intelligence Through Recursive Inferencing*
+### *Abstract Syntax Tree (AST) Mapping and Recursive Inference Execution Workspace*
 
-RLM Studio is a production-grade web development environment built to leverage **Recursive Language Models (RLMs)** and **Self-Steering Architectures**. By utilizing the [Scribe-LLM Backend Engine](https://github.com/oldskool978/Scribe-LLM) as its underlying execution layer, RLM Studio transforms the standard "one-shot" generation paradigm into a multi-stage, self-correcting cognitive loop directly within the browser interface.
+RLM-Studio is a web-native, deterministic engineering workspace and verification harness optimized for macroscopic codebase creation, refactoring, and automated structural repairs. Moving away from standard conversational chat frameworks, RLM-Studio handles software codebases as unified execution trees rather than fragmented text sequences. While the layout provides a dedicated sidebar for localized chat interaction and sequential diagnostics, the core workspace operates as an autonomous engineering console. The operator defines high-level programmatic goals or points to targeted code defects, and the system executes file mutations directly across a hermetic filesystem instantiated entirely within the browser client.
 
----
-
-## 🔬 The Science: Beyond Context Windows
-Models naturally suffer from **Context Rot**—as prompts grow, logic degrades. RLM Studio implements the structural findings of the whitepaper, **"Recursive Language Models" (arXiv:2512.24601v2)** to overcome these physical constraints.
-
-> *"We propose Recursive Language Models (RLMs), a general inference paradigm that treats long prompts as part of an environment and allows the LLM to programmatically examine, decompose, and recursively call itself over snippets of the prompt."* > — **Zhang et al., 2026**
-
-### The Edge-Compute Paradigm: Unleashing Local Models
-Historically, frontier-level reasoning was bounded by the VRAM memory wall, necessitating massive parameter counts for reliable zero-shot execution. RLM Studio substitutes static parametric scaling with dynamic test-time computation and recursive latent refinement. 
-
-Orchestrated by the [Scribe-LLM Core Engine](https://github.com/oldskool978/Scribe-LLM), local micro-models (1B–8B parameters) operating entirely on consumer-grade silicon are decoupled from the burden of structural memorization via Grammar-Constrained Decoding (GCD). When coordinated into a Sequential Monte Carlo (SMC) swarm, these highly quantized local models achieve deep supervision, converging on reasoning efficacies previously restricted to server-class architectures.
-
-### The DisCIPL Paradigm & Self-Steering
-RLM Studio integrates the **DisCIPL** framework. Language models themselves drive the decisions for how to structure inference-time computation. A "Planner" model generates a task-specific inference program that is executed by a population of smaller "Follower" models. This allows small, locally deployed models to match or outperform massive frontier models on challenging constrained generation tasks.
+The platform coordinates structural context management methodologies established during the development of the [Scribe-LLM Core Engine](https://github.com/oldskool978/Scribe-LLM) to maximize token utility and guide localized inference passes across multi-file architectures.
 
 ---
 
-## 🛠 Features & Architecture
+## 🔬 Core Architectural Paradigms
 
-* **Scribe-LLM Engine Integration:** Deep, low-overhead backend orchestration. RLM Studio interfaces natively with the [Scribe-LLM Core Engine](https://github.com/oldskool978/Scribe-LLM) to drive its local hardware execution tracks—including AMD ROCm, NVIDIA CUDA, and high-throughput CPU vectorization—without relying on external cloud dependencies.
-* **A Transparent Architecture:** A real-time virtual file system accessible to the model context. Interact directly with the model's internal "Running Buffer." Never guess what the model is thinking; see the Plan, the Critique, and the Evolution of the codebase.
-* **Sequential Monte Carlo Swarm Logic:** Active orchestration framework that manages parallel candidate generation paths, pruning low-probability trajectories while steering local weights toward deterministic solutions.
-* **Native Inference Controls:** Direct hardware-level control using Mirostat v2 sampling, Context Shift, and JSON-enforced Grammar-Constrained Decoding (GCD) managed directly through the unified backend pipeline.
-* **Polystructural Switching:** The engine dynamically reshapes its own output probability space at each stage of the recursion to match the current task layer.
-* **PUBA Integration:** Methodologies are strictly enforced to control, isolate, and evaluate privileged reasoning paths within the local execution environment.
+RLM-Studio operates on formal data-transformation loops designed to track code dependencies precisely while protecting against context rot:
+
+### 1. Stateful Recursive Language Model (RLM) Cognitive Loops
+*   **Programmatic Context Interaction:** Implementation follows the formal RLM framework, treating long prompts and codebase schemas as an external environment that the underlying model can programmatically query, partition, and modify.
+*   **Amnesia-Free REPL Execution:** The system deploys stateful Read-Eval-Print Loops via an integrated `RLMNodeStrategy`. The model runs automated inspection routines over workspace registers and evaluates intermediate adjustments before committing changes.
+*   **Automated Convergence Targets:** The cognitive loop runs continuously across file blocks until a deterministic `<status>resolved</status>` token is parsed, signifying semantic completion.
+
+### 2. Hermetic In-Browser Filesystem
+*   **Total Local Isolation:** The environment hosts an entirely isolated, browser-accessible Virtual File System (VFS) mapped to episodic memory blocks.
+*   **Operator Intermediation:** Operators can move through the virtual directory tree, inspect model-generated file variants, request targeted edits, or manually modify source lines directly within the VFS panels.
+*   **One-Click Structural Export:** Once code updates pass validation checks and achieve logical convergence, the operator can click the download action to download the entire workspace folder structure instantly. The filesystem is serialized, packed, and delivered as a clean local project directory ready for production deployment.
+
+### 3. Abstract Syntax Tree (AST) & Context Matrix Controls
+*   **Structural Context Compaction:** Rather than feeding raw, high-entropy source text directly into the model's primary window, the harness strips comments and parses structures into high-level semantic tokens.
+*   **Inline Context Management:** VRAM allocations and token thresholds are profiled before every generation pass using a real-time `ContextMatrix.enforceContextBounds` workflow.
+*   **Autonomous Evacuation Slicing:** When project scopes expand near physical hardware boundaries, the compiler runs isolated micro-passes to condense long conversation histories into dense latent summaries. This keeps critical architectural limits, class blueprints, and core prompt dependencies in the immediate context of the model being leveraged.
+
+### 4. Deterministic DAG Routing
+*   **Elimination of Regex Parsing:** Macro-structural workflows are managed through a compiled `DAGLogicEvaluator`. The engine routes token operations through dedicated text classification, file editing, and verification nodes using explicit JSON schemas and GBNF grammar constraints.
+*   **Pushdown Lexical Processing:** Output states and syntactic token boundaries are processed character-by-character via a custom `_lexicalStreamParse` setup. The architecture isolates system blocks (`<think>`, `<rlm_exec>`, `<artifact>`) sequentially, avoiding syntax frailty during live token streaming.
 
 ---
 
-## 📅 Deployment Roadmap
-Following the integration of the core [Scribe-LLM](https://github.com/oldskool978/Scribe-LLM) backend layer, the client UI phase is in its final optimizations.
+## 🛠 Features & Harness Workflow
+
+*   **Explorable Virtual File System (VFS):** RLM-Studio displays an interactive folder panel linked straight to Scribe-LLM's internal registers. Operators can visually monitor how the model populates, updates, and splits project code across individual reasoning nodes.
+*   **Deterministic Codebase Harnessing:** Designed to track complete software architectures rather than individual code snippets. The application evaluates file footprints, line numbers, and register spaces natively, letting local models cross-reference dependencies accurately across an entire folder layout.
+*   **Inline Context Handling & Token Recovery:** Monitors low-level chunk metadata flags directly from the inference gateway socket. If a generation reaches max token constraints, the workspace freezes the transaction state, appends the partial generation as an assistant prefix, and hydrates a dependency-contingent asset map; then executes a continuation pass with no degradation to the task in flight.
+
+---
+
+## 📅 Implementation Roadmap
+
+Following the production deployment of Scribe-LLM v1.0.0's backend core and hardware acceleration modules, integration focus is centered on optimizing the Web-IDE visualization layout and local VFS serialization.
 
 **Status: [███████████████████▒] 96%**
 
-- [x] Core Scribe-LLM local inference orchestration binding
-- [x] Grammar-Constrained JSON schema validation engine
-- [x] Sequential Monte Carlo (SMC) swarm orchestration engine
-- [ ] Final polishing of the HTML5/CSS3/JS Web-IDE client interface
+- [x] Bidirectional server-sent event (SSE) state streaming via the `ScribeGateway` matrix.
+- [x] Local multi-register `VectorizedVirtualFileSystem` synchronization mechanics.
+- [x] Secure, isolated JavaScript Web Worker sandbox for code execution testing.
+- [x] Interactive web UI file browser and live directory tracking panels.
+- [ ] Final optimization of the browser-based codebase compiler and automated file export.
 
 ---
 
 ### References
-* Zhang, A. L., Kraska, T., & Khattab, O. (2026). *Recursive Language Models*. arXiv preprint arXiv:2512.24601v2. 
+* Zhang, A. L., Kraska, T., & Khattab, O. (2026). *Recursive Language Models*. arXiv preprint arXiv:2512.24601v3.
 * Grand, G., et al. (2025). *Self-Steering Language Models*. arXiv preprint arXiv:2504.07081.
+* Jolicoeur-Martineau, A. (2025). *Less is More: Recursive Reasoning with Tiny Networks*. (Samsung SAIL Montréal).
+* Hamilton, S., & Mimno, D. (2025). *Lost in Space: Optimizing Tokens for Grammar-Constrained Decoding*. (Cornell University).
+* DeepSeek-AI. (2025). *DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence*.
+```
